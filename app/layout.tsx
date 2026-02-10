@@ -1,9 +1,10 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Kode_Mono, Montserrat } from 'next/font/google';
+import { Golos_Text, Kode_Mono, Montserrat } from 'next/font/google';
 import localFont from 'next/font/local';
 
+import { Footer } from '@/lib/components/footer';
 import { cn } from '@/lib/utils/cn';
 
 const gothamPro = localFont({
@@ -73,6 +74,11 @@ const kodeMono = Kode_Mono({
   subsets: ['latin'],
 });
 
+const golosText = Golos_Text({
+  variable: '--font-golos-text',
+  subsets: ['latin', 'cyrillic'],
+});
+
 export const metadata: Metadata = {
   title: 'CDN VideoHub',
   description: '',
@@ -84,9 +90,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={cn(montserrat.variable, gothamPro.variable, kodeMono.variable, 'font-montserrat min-w-75')}>
+    <html lang="ru" className="scroll-smooth">
+      <body
+        className={cn(
+          montserrat.variable,
+          gothamPro.variable,
+          kodeMono.variable,
+          golosText.variable,
+          'font-montserrat min-w-75',
+        )}
+      >
         {children}
+        <Footer />
       </body>
     </html>
   );

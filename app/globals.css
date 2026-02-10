@@ -11,8 +11,10 @@
   --font-montserrat: var(--font-montserrat);
   --font-gotham-pro: var(--font-gotham-pro);
   --font-kode-mono: var(--font-kode-mono);
+  --font-golos-text: var(--font-golos-text);
   --leading-subpup: 1.1;
   --leading-pup: 1.2;
+  --leading-extrasubpup: 1.3;
   --leading-extrapup: 1.5;
 }
 

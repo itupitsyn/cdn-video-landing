@@ -1,16 +1,17 @@
 import { FC } from 'react';
 
 import { cn } from '../utils/cn';
-import { LinkButton } from './link-button';
+import { BecomePartnerLink } from './become-partner-link';
 import { VideoPlayer } from './video-player';
 
 export const Header: FC = () => {
   return (
-    <section className="flex flex-col items-center pt-29">
+    <header className="flex flex-col items-center">
       <div className="container flex flex-col items-center">
         <h1
           className={cn(
-            'font-gotham-pro text-[50px] leading-[120%] font-bold tracking-tighter',
+            'font-gotham-pro pt-29 text-[50px] leading-[120%] font-bold tracking-tighter',
+            'sm:pt-15 sm:font-[75px]',
             'bg-[linear-gradient(90deg,rgba(210,0,0,0.4)_0%,rgba(62,0,0,0.4)_34.5%,rgba(0,29,146,0.4)_100%),linear-gradient(0deg,#F50004,#F50004)]',
             'bg-clip-text text-transparent',
           )}
@@ -18,18 +19,19 @@ export const Header: FC = () => {
           CDN VideoHub
         </h1>
 
-        <p className="leading-pup pt-3 text-center whitespace-pre-wrap">
+        <p className="leading-pup pt-3 text-center whitespace-pre-wrap sm:hidden">
           {'Установи плеер CDNvideoHub\nи зарабатывай на каждом\nпоказе рекламы'}
+        </p>
+        <p className="leading-pup hidden pt-2 text-center whitespace-pre-wrap sm:block">
+          {'Установи плеер CDNvideoHub и зарабатывай\nна каждом показе рекламы'}
         </p>
       </div>
 
-      <VideoPlayer className="mt-7.75" />
+      <VideoPlayer className="mt-7.75 sm:mt-6" />
 
-      <div className="container mt-41 flex flex-col items-center">
-        <LinkButton color="red" className="w-full text-center sm:max-w-99.75 lg:max-w-172.5">
-          Стать партнером
-        </LinkButton>
+      <div className="container mt-41 flex flex-col items-center sm:mt-7.75">
+        <BecomePartnerLink />
       </div>
-    </section>
+    </header>
   );
 };

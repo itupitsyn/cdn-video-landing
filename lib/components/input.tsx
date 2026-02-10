@@ -16,14 +16,15 @@ const Component: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
       <input
         ref={ref}
         className={cn(
-          'text-input-border placeholder:text-input-border border-b border-solid px-1 py-3.5 leading-[110%] font-light tracking-tight transition-colors outline-none lg:text-xl',
+          'border border-solid',
+          isInvalid ? 'border-red-600' : 'border-white/20 hover:border-white/50 focus:border-white/50',
+          'rounded-[30px] px-6 py-5.5 text-[18px] leading-extrasubpup text-white/60 transition-colors outline-none placeholder:text-white/60 sm:px-6 sm:py-6 lg:px-6 lg:py-8 lg:text-2xl',
           'not-placeholder-shown:text-white focus:text-white',
-          isInvalid ? 'border-error' : 'border-input-border not-placeholder-shown:border-white focus:border-white',
         )}
         {...props}
       />
 
-      {errorText && <div className="leading-pup absolute top-[110%] left-0 text-xs text-red-600">{errorText}</div>}
+      {errorText && <div className="leading-pup absolute bottom-1.5 left-5 text-xs text-red-600">{errorText}</div>}
     </div>
   );
 };

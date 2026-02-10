@@ -13,3 +13,5 @@ export const inputSchema = z.object({
     .min(1, { error: 'Обязательное поле' })
     .max(1024, { error: 'Максимальная длина 1024' }),
 });
+
+export const REQUEST_FORM_ID = 'request-form';
