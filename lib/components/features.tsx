@@ -8,7 +8,7 @@ interface FeatureProps {
 
 const Feature: FC<FeatureProps> = ({ text }) => {
   return (
-    <div className={cn('relative flex h-45.75 flex-col overflow-hidden rounded-[40px] sm:h-61 lg:h-63.5')}>
+    <div className={cn('relative flex h-53.5 flex-col overflow-hidden rounded-[40px] sm:h-61 lg:h-63.5')}>
       <div
         className={cn(
           'absolute top-0 right-0 bottom-0 left-0 rounded-[41px] bg-[linear-gradient(136.71deg,#F50004_3.11%,#2E1818_94.5%)]',

@@ -1,4 +1,5 @@
 import { Advantages } from '@/lib/components/advantages';
+import { Background } from '@/lib/components/background';
 import { Features } from '@/lib/components/features';
 import { Header } from '@/lib/components/header';
 import { HowItWorks } from '@/lib/components/how-it-works';
@@ -7,7 +8,8 @@ import { RequestForm } from '@/lib/components/request-form';
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Background />
       <main>
         <Header />
         <Features />
@@ -16,6 +18,6 @@ export default function Home() {
         <RequestForm />
         <QA />
       </main>
-    </div>
+    </>
   );
 }

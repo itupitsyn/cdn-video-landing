@@ -97,7 +97,7 @@ export default function RootLayout({
           gothamPro.variable,
           kodeMono.variable,
           golosText.variable,
-          'font-montserrat min-w-75',
+          'font-montserrat relative min-w-75',
         )}
       >
         {children}

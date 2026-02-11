@@ -30,14 +30,14 @@ export const Footer: FC = () => {
           </a>
         </div>
 
-        <div className="leading-subpup sm:leading-extrasubpup flex flex-col gap-6 text-[18px] tracking-tight text-white/50 sm:gap-5.25 sm:text-[22px] sm:text-white lg:text-white/50">
+        <div className="leading-subpup sm:leading-extrasubpup flex flex-col gap-6 text-[18px] tracking-tighter text-white/50 sm:gap-5.25 sm:text-[22px] sm:text-white lg:text-white/50">
           <div>Политика конфиденциальности</div>
           <div>Согласие на обработку персональных данных</div>
           <div>Пользовательское соглашение</div>
         </div>
       </div>
 
-      <div className="font-gotham-pro leading-extrasubpup pt-7.5 tracking-tight text-[#8C8C8C] sm:pt-12.75 sm:text-2xl">
+      <div className="font-gotham-pro leading-extrasubpup pt-7.5 tracking-tighter text-[#8C8C8C] sm:pt-12.75 sm:text-2xl">
         © CDNvideoHub — монетизация видеоконтента
       </div>
     </footer>
