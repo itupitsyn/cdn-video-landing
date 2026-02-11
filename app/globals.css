@@ -16,6 +16,8 @@
   --leading-pup: 1.2;
   --leading-extrasubpup: 1.3;
   --leading-extrapup: 1.5;
+  --breakpoint-b27: 27rem;
+  --breakpoint-b50: 50rem;
 }
 
 body {
