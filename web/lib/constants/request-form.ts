@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const inputSchema = z.object({
-  url: z
+  site: z
     .url({ error: 'Некорректный формат' })
     .trim()
     .min(1, { error: 'Обязательное поле' })

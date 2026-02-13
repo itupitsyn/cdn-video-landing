@@ -23,7 +23,7 @@ export const RequestForm: FC = () => {
     defaultValues: {
       telegram: '',
       traffic: undefined,
-      url: '',
+      site: '',
     },
   });
 
@@ -128,7 +128,7 @@ export const RequestForm: FC = () => {
             {unexpectedError && <div className="leading-[120%] text-red-600">{unexpectedError}</div>}
             <Controller
               control={control}
-              name="url"
+              name="site"
               render={({ field, fieldState: { invalid, error } }) => (
                 <Input {...field} isInvalid={invalid} errorText={error?.message} placeholder="https://site.ru" />
               )}
