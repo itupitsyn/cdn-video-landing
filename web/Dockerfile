@@ -12,10 +12,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# ARG DATABASE_URL
-# ENV DATABASE_URL=$DATABASE_URL
+ARG DATABASE_URL
+ENV DATABASE_URL=$DATABASE_URL
 
-# RUN bunx prisma generate
+RUN bunx prisma generate
 RUN bun run build
 
 # 3. Финальный образ
