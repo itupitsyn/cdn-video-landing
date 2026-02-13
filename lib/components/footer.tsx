@@ -7,7 +7,7 @@ export const Footer: FC = () => {
     <footer className="container py-9 sm:pt-17.25 sm:pb-8.75 lg:pt-11.25 lg:pb-18">
       <div
         className={cn(
-          'leading-pup! font-gotham-pro text-4xl font-bold tracking-tighter',
+          'leading-pup! font-gotham-pro text-4xl font-bold tracking-[-0.065em]',
           'b50:text-[112px] b27:text-[57px] sm:text-7xl',
         )}
       >
@@ -30,7 +30,7 @@ export const Footer: FC = () => {
           </a>
         </div>
 
-        <div className="leading-subpup sm:leading-extrasubpup flex flex-col gap-6 text-[18px] tracking-tighter text-white/50 sm:gap-5.25 sm:text-[22px] sm:text-white lg:text-white/50">
+        <div className="leading-subpup sm:leading-extrasubpup flex flex-col gap-6 text-[18px] tracking-tighter text-white/50 sm:gap-6 sm:text-[22px] sm:text-white lg:text-white/50">
           <div>Политика конфиденциальности</div>
           <div>Согласие на обработку персональных данных</div>
           <div>Пользовательское соглашение</div>

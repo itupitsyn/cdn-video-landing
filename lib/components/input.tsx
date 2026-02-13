@@ -18,7 +18,7 @@ const Component: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
         className={cn(
           'border border-solid',
           isInvalid ? 'border-red-600' : 'border-white/20 hover:border-white/50 focus:border-white/50',
-          'rounded-[30px] px-6 py-5.5 text-[18px] leading-extrasubpup text-white/60 transition-colors outline-none placeholder:text-white/60 sm:px-6 sm:py-6 lg:px-6 lg:py-8 lg:text-2xl',
+          'leading-extrasubpup rounded-[30px] px-6 py-5.5 text-[18px] text-white/60 transition-colors outline-none placeholder:text-white/60 sm:px-6 sm:py-6 lg:px-6 lg:py-7.5 lg:text-2xl',
           'not-placeholder-shown:text-white focus:text-white',
         )}
         {...props}

@@ -42,7 +42,7 @@ export const QA: FC = () => {
         Вопросы и ответы
       </h2>
 
-      <div className="flex flex-col gap-2 pt-7.5">
+      <div className="flex flex-col gap-2 pt-7.5 sm:gap-6">
         {data.map((item, idx) => (
           <div
             key={item.id}

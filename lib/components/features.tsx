@@ -44,7 +44,7 @@ export const Features: FC = () => {
         <Feature text="Высокая скорость выхода новинок " />
       </section>
 
-      <section className="container hidden grid-cols-4 gap-x-5 gap-y-3.25 pt-20 sm:grid lg:grid">
+      <section className="container hidden grid-cols-4 gap-x-5 gap-y-3.25 pt-20 lg:grid">
         <Feature text="База контента более 60 000 тайтлов" />
         <div />
         <Feature text="Выделенный менеджер поддержки " />

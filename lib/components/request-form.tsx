@@ -39,7 +39,6 @@ export const RequestForm: FC = () => {
       const res = await sendRequest(formData);
       const { validationErrors, serverError } = res;
       if (!validationErrors && !serverError) {
-        // setIsSuccess(true);
         return;
       }
       setUnexpectedError('Неизвестная ошибка');
@@ -79,24 +78,24 @@ export const RequestForm: FC = () => {
         )}
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="flex flex-col gap-7.5">
-          <h2 className="font-gotham-pro leading-pup lg:leading-subpup pt-10 text-center text-[30px] tracking-tight sm:hidden lg:block lg:pt-12.5 lg:text-left lg:text-[72px] lg:whitespace-pre-wrap">
+        <div>
+          <h2 className="font-gotham-pro leading-pup lg:leading-subpup pt-10 text-center text-[30px] tracking-tight whitespace-pre-wrap sm:hidden lg:block lg:pt-12.5 lg:text-left lg:text-[72px]">
             {'Начать можно \nза пару минут'}
           </h2>
 
           <h2 className="font-gotham-pro leading-subpup hidden pt-15.5 text-center text-[50px] tracking-tight sm:block lg:hidden">
             Начать за пару минут
           </h2>
-
-          <p className="leading-pup text-center font-light tracking-tight sm:hidden">
-            Отправьте заявку — персональный менеджер свяжется с вами в течении пары минут и поможет с подключением
-          </p>
         </div>
 
         <div className="hidden lg:block" />
 
-        <div className="flex flex-col gap-7.5">
-          <p className="leading-pup hidden text-center font-light tracking-tight whitespace-pre-wrap sm:block lg:hidden">
+        <div className="flex flex-col gap-7.5 sm:gap-8.5 lg:gap-6.25">
+          <p className="leading-pup text-center text-[18px] font-light tracking-tight sm:hidden">
+            Отправьте заявку — персональный менеджер свяжется с вами в течении пары минут и поможет с подключением
+          </p>
+
+          <p className="leading-pup hidden text-center text-[20px] font-light tracking-tight whitespace-pre-wrap sm:block lg:hidden">
             {'Отправьте заявку — персональный менеджер свяжется\nс вами в течении пары минут и поможет с подключением'}
           </p>
 
@@ -104,10 +103,10 @@ export const RequestForm: FC = () => {
             {'Отправьте заявку — персональный менеджер\nсвяжется с вами в течении пары минут\nи поможет с подключением'}
           </p>
 
-          <div className="flex flex-col gap-2 sm:gap-4.5 sm:px-5 sm:pt-5 lg:gap-3.25 lg:px-0">
+          <div className="flex flex-col gap-4.5 sm:gap-4.5 sm:px-5 sm:pt-5.5 lg:gap-3.25 lg:px-0">
             <p className="leading-pup text-white/60 sm:text-xl">Условия подключения</p>
 
-            <ul className="leading-extrasubpup! flex flex-col gap-7 text-[18px] sm:text-xl lg:text-[22px]">
+            <ul className="leading-extrasubpup! flex flex-col gap-4.25 text-[18px] sm:gap-5 sm:text-xl lg:text-[22px]">
               <li className="flex items-center gap-2.5 sm:gap-5">
                 <IconCheckInCircle className="flex-none sm:size-6.25" />
                 Трафик от 2000 уников в сутки 
@@ -124,8 +123,8 @@ export const RequestForm: FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-7.5">
-          <div className="flex flex-col gap-3 lg:gap-4">
+        <div className="flex flex-col gap-9.5 pt-1.5 sm:gap-25.5 lg:gap-20.5">
+          <div className="flex flex-col gap-2.5 lg:gap-4">
             {unexpectedError && <div className="leading-[120%] text-red-600">{unexpectedError}</div>}
             <Controller
               control={control}
@@ -159,7 +158,13 @@ export const RequestForm: FC = () => {
             />
           </div>
 
-          <Button variant="default" color="black" type="submit" disabled={isSubmitting} className="sm:mt-18 lg:mt-13">
+          <Button
+            variant="default"
+            color="black"
+            type="submit"
+            disabled={isSubmitting}
+            className="sm:h-17.75 lg:h-auto"
+          >
             Стать партнером
           </Button>
         </div>

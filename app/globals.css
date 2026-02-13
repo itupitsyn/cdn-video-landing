@@ -16,7 +16,7 @@
   --leading-pup: 1.2;
   --leading-extrasubpup: 1.3;
   --leading-extrapup: 1.5;
-  --breakpoint-b27: 27rem;
+  --breakpoint-b27: 25rem;
   --breakpoint-b50: 50rem;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  @apply mx-auto max-w-480 px-3 lg:px-5;
+  @apply mx-auto max-w-360 px-3 lg:px-5;
 }
 
 input:-webkit-autofill,
