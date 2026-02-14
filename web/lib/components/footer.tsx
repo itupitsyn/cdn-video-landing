@@ -18,13 +18,13 @@ export const Footer: FC = () => {
         <div className="flex flex-wrap gap-5.25 lg:flex-col">
           <a
             href="https://t.me/CVHsupportBot"
-            className="hover:white/80 leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors"
+            className="leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors hover:text-white/80"
           >
             @CVHsupportBot
           </a>
           <a
             href="mailto:partner@cdnvideohub.com"
-            className="hover:white/80 leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors"
+            className="leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors hover:text-white/80"
           >
             partner@cdnvideohub.com
           </a>
