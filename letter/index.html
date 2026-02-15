@@ -1,39 +1,161 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #333;
+      color: #FFF;
+      background-color: #070000;
+      margin: 0 !important;
+      box-sizing: border-box;
     }
+
+    div,
+    img,
+    td,
+    p, button, a {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:visited {
+      color: white;
+    }
+
     .content {
-      width: 600px;
-      padding: 20px;
+      width: 100%;
+    }
+
+    .logo {
+      max-width: 429px;
+      margin-top: 56px;
+    }
+
+    .player {
+      height: 310px;
+      margin-top: 52px;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .header-text {
+      font-size: 24px !important;
+      line-height: 1.3 !important;
+      padding-top: 4px;
+      text-align: center;
+    }
+
+    .text-1 {
+      line-height: 1.3;
+      font-size: 22px;
+      text-align: center;
+      max-width: 501px;
+      padding-top: 26px;
+    }
+
+    .become-partner {
+      max-width: 557px;
+      margin: 36px 22px 0 22px;
+      border: solid 1px #F50004;
+      border-radius: 30px;
+      display: block;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 24px;
     }
 
     @media screen and (max-width: 480px) {
       .content {
         width: 100% !important;
-        padding: 10px !important;
       }
-      
-      .title {
-        font-size: 24px !important;
-        line-height: 1.2 !important;
+
+      .logo {
+        max-width: 328px;
+        margin-top: 36px;
       }
-      
-      .text {
+
+      .header-text {
         font-size: 18px !important;
+        padding-top: 25px;
+      }
+
+      .player {
+        height: 195px;
+        margin-top: 37px;
+      }
+
+      .text-1 {
+        line-height: 1.3;
+        font-size: 18px;
+        max-width: 351px;
+        padding-top: 32px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="content">
-    <h1 class="title">Заголовок письма</h1>
-    <p class="text">Какой-то текст письма, который должен хорошо читаться на телефоне.</p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center">
+          <table width="600" border="0" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 600px;">
+            <tr>
+              <td style="text-align: center; overflow: hidden;">
+                <img src="http://127.0.0.1:5500/letter/images/sm/logo.webp" class="logo"></img>
+                <p class="header-text">Установите плеер CDNvideoHub — зарабатывайте на каждом показе рекламы</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="player">
+      <tr>
+        <td background="http://127.0.0.1:5500/letter/images/sm/player.webp" valign="middle"
+          style="background-size: cover; background-position: center;">
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center">
+          <table width="600" border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="text-1">
+            <tr>
+              <td style="text-align: center; overflow: hidden;">
+                Подключите наш видеоплеер и начните получать стабильный доход с рекламы.
+                Простое подключение, ежемесячные выплаты и персональная поддержка.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align: center; overflow: hidden;">
+                <a href="https://change-me.ru" class="become-partner">Стать партнером</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
   </div>
 </body>
+
 </html>
