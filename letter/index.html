@@ -9,6 +9,9 @@
       font-size: 16px;
       color: #FFF;
       background-color: #070000;
+      background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.webp);
+      background-repeat: no-repeat;
+      background-position: center;
       margin: 0 !important;
       box-sizing: border-box;
     }
@@ -85,6 +88,10 @@
       padding: 24px;
     }
 
+    .become-partner:hover {
+      background-color: #F50004;
+    }
+
     .subheader {
       font-size: 28px;
       line-height: 1.2;
@@ -102,7 +109,7 @@
 
         table {
           font-size: 18px;
-          /* background-image: url(http://127.0.0.1:5500/letter/images/sm/border-red.webp); */
+          /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/border-red.webp); */
           /* background-size: contain;
           background-repeat: no-repeat; */
           border: 1px solid red;
@@ -117,7 +124,7 @@
     }
 
     .how-to-earn-container {
-      background-image: url(http://127.0.0.1:5500/letter/images/sm/bg-blue.webp);
+      background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.webp);
       background-position: center;
       background-repeat: no-repeat;
       padding-top: 35px;
@@ -134,7 +141,7 @@
 
         .cell {
           font-size: 22px;
-          /* background-image: url(http://127.0.0.1:5500/letter/images/sm/border-blue.webp);
+          /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/border-blue.webp);
           background-size: contain; */
           border: 1px solid blue;
           border-radius: 30px;
@@ -149,8 +156,9 @@
     }
 
     .conditions {
-      padding-left: 62px;
-      padding-right: 62px;
+      margin-left: 5px;
+      margin-right: 5px;
+      max-width: 476px;
 
       .text-cell {
         padding: 8px 0 8px 20px;
@@ -175,8 +183,13 @@
       font-size: 22px;
       line-height: 1.2;
 
-      a {
+      .link {
         color: #FFFFFF80;
+        text-decoration: underline;
+      }
+
+      .link:hover {
+        color: white;
       }
     }
 
@@ -229,7 +242,7 @@
         .cell-container {
           .cell {
             font-size: 18px;
-            /* background-image: url(http://127.0.0.1:5500/letter/images/xs/border-blue.webp); */
+            /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/xs/border-blue.webp); */
             word-wrap: break-word;
             word-break: break-word;
             overflow: hidden;
@@ -256,7 +269,7 @@
           <table border="0" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 600px;">
             <tr>
               <td style="text-align: center; overflow: hidden;">
-                <img src="http://127.0.0.1:5500/letter/images/sm/logo.webp" class="logo"></img>
+                <img src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/logo.webp" class="logo"></img>
                 <p class="header-text">Установите плеер CDNvideoHub — зарабатывайте на каждом показе рекламы</p>
               </td>
             </tr>
@@ -267,7 +280,7 @@
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="player">
       <tr>
-        <td background="http://127.0.0.1:5500/letter/images/sm/player.webp" valign="middle"
+        <td background="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/player.webp" valign="middle"
           style="background-size: cover; background-position: center;">
         </td>
       </tr>
@@ -464,41 +477,48 @@
 
     <h2 class="subheader">Условия подключения</h2>
 
-    <table border="0" cellspacing="0" cellpadding="0" style="font-size: 22px; line-height: 1.2;" class="conditions">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td valign="top" class="icon-cell">
-          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-              stroke="white" stroke-width="1.25" stroke-linecap="round" />
-          </svg>
-        </td>
-        <td class="text-cell">
-          Трафик от 2000 уникальных посетителей в сутки
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" class="icon-cell">
-          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-              stroke="white" stroke-width="1.25" stroke-linecap="round" />
-          </svg>
-        </td>
-        <td class="text-cell">
-          Доступ в Метрику
-        </td>
-      </tr>
-      <tr>
-        <td valign="top" class="icon-cell">
-          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-              stroke="white" stroke-width="1.25" stroke-linecap="round" />
-          </svg>
-        </td>
-        <td class="text-cell">
-          Наш плеер должен быть установлен на первом месте
+        <td align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 22px; line-height: 1.2;"
+            class="conditions">
+            <tr>
+              <td valign="top" class="icon-cell">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
+                </svg>
+              </td>
+              <td class="text-cell">
+                Трафик от 2000 уникальных посетителей в сутки
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="icon-cell">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
+                </svg>
+              </td>
+              <td class="text-cell">
+                Доступ в Метрику
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" class="icon-cell">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
+                </svg>
+              </td>
+              <td class="text-cell">
+                Наш плеер должен быть установлен на первом месте
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
