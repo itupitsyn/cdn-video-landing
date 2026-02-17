@@ -20,7 +20,57 @@ const images = [p1, p2, p3, p4, p5, p6, p7, p8];
 
 export const Posters: FC = () => {
   return (
-    <Swiper spaceBetween={16} slidesPerView={3} centeredSlides loop freeMode style={{ overflow: 'visible' }}>
+    <Swiper
+      initialSlide={7}
+      spaceBetween={16}
+      slidesPerView={3}
+      centeredSlides
+      loop
+      freeMode
+      style={{ overflow: 'visible' }}
+    >
+      {images.map((item, idx) => (
+        <SwiperSlide key={idx} className="flex! justify-center!">
+          {({ isActive, isPrev, isNext }) => {
+            return (
+              <Image
+                src={item}
+                alt={''}
+                height={358}
+                width={286}
+                className={cn(
+                  'h-32.75 w-22.25 transition-[scale,opacity] duration-300 select-none',
+                  'sm:h-57 sm:w-38.5 lg:h-75 lg:w-51',
+                  isActive && 'scale-120',
+                  !isPrev && !isNext && !isActive && 'opacity-60',
+                )}
+                quality={90}
+              />
+            );
+          }}
+        </SwiperSlide>
+      ))}
+      {images.map((item, idx) => (
+        <SwiperSlide key={idx} className="flex! justify-center!">
+          {({ isActive, isPrev, isNext }) => {
+            return (
+              <Image
+                src={item}
+                alt={''}
+                height={358}
+                width={286}
+                className={cn(
+                  'h-32.75 w-22.25 transition-[scale,opacity] duration-300 select-none',
+                  'sm:h-57 sm:w-38.5 lg:h-75 lg:w-51',
+                  isActive && 'scale-120',
+                  !isPrev && !isNext && !isActive && 'opacity-60',
+                )}
+                quality={90}
+              />
+            );
+          }}
+        </SwiperSlide>
+      ))}
       {images.map((item, idx) => (
         <SwiperSlide key={idx} className="flex! justify-center!">
           {({ isActive, isPrev, isNext }) => {
