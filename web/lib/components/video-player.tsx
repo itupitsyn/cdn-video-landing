@@ -15,13 +15,13 @@ export const VideoPlayer: FC<VideoPlayerProps> = ({ className }) => {
     <div className={cn('flex w-full flex-col items-center overflow-hidden', className)}>
       <div
         className={cn(
-          'relative mx-5 h-52 w-full max-w-93.25 rounded-sm bg-black',
+          'relative mx-5 h-52 w-full max-w-93.25 rounded-[30px] bg-black',
           'lg:h-119.75 lg:max-w-214.5',
           'sm:h-95.75 sm:max-w-162.25',
         )}
       >
-        <div className="absolute top-0 left-0 z-2 h-[80%] w-4 rounded-[inherit] bg-black sm:w-15 lg:w-10" />
-        <div className="absolute top-0 right-0 z-2 h-[80%] w-4 rounded-[inherit] bg-black sm:w-15 lg:w-10" />
+        <div className="absolute top-0 left-0 z-2 h-[80%] w-4 rounded-[inherit] bg-black sm:w-15 lg:h-[90%] lg:w-10" />
+        <div className="absolute top-0 right-0 z-2 h-[80%] w-4 rounded-[inherit] bg-black sm:w-15 lg:h-[90%] lg:w-10" />
 
         <div className="px-4 pt-7 sm:px-7.5 sm:pt-15 lg:px-10 lg:pt-19.5">
           <Posters />
