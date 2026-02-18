@@ -21,8 +21,8 @@ export const VideoPlayer: FC<VideoPlayerProps> = ({ className }) => {
           'desktop:h-119.75 desktop:max-w-214.5 desktop:rounded-[18px]',
         )}
       >
-        <div className="tablet:w-15 desktop:h-[90%] desktop:w-10 absolute top-0 left-0 z-2 h-[87%] w-4 rounded-[inherit] bg-black" />
-        <div className="tablet:w-15 desktop:h-[90%] desktop:w-10 absolute top-0 right-0 z-2 h-[87%] w-4 rounded-[inherit] bg-black" />
+        <div className="tablet:w-15 desktop:h-[90%] desktop:w-10 absolute top-0 left-0 z-2 h-[87%] w-4 rounded-t-[inherit] bg-black" />
+        <div className="tablet:w-15 desktop:h-[90%] desktop:w-10 absolute top-0 right-0 z-2 h-[87%] w-4 rounded-t-[inherit] bg-black" />
 
         <div className="tablet:px-7.5 tablet:pt-15 desktop:px-10 desktop:pt-19.5 px-4 pt-7">
           <Posters />
