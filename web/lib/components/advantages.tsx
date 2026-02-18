@@ -12,7 +12,7 @@ const Advantage: FC<AdvantageProps> = ({ text, className }) => {
   return (
     <div
       className={cn(
-        'relative flex min-h-53.5 flex-col overflow-hidden rounded-[40px] sm:min-h-65.75 lg:min-h-78.25',
+        'tablet:min-h-65.75 desktop:min-h-78.25 air:min-h-69.25 relative flex min-h-53.5 flex-col overflow-hidden rounded-[40px]',
         className,
       )}
     >
@@ -22,10 +22,12 @@ const Advantage: FC<AdvantageProps> = ({ text, className }) => {
           'mask-exclude! [mask-clip:content-box,border-box]! p-px [mask:linear-gradient(#fff_0_0)_padding-box,linear-gradient(#fff_0_0)]',
         )}
       />
-      <div className="flex grow flex-col justify-between rounded-[39px] px-4 py-5 sm:p-6 lg:px-7.5 lg:py-5">
-        <IconCheck className="lg:size-7.75" />
+      <div className="tablet:p-6 desktop:px-7.5 desktop:py-5 flex grow flex-col justify-between rounded-[39px] px-4 py-5">
+        <IconCheck className="desktop:size-7.75" />
 
-        <p className="leading-pup sm:leading-extrasubpup sm:text-[18px] lg:text-[22px]">{text}</p>
+        <p className="leading-pup tablet:leading-extrasubpup tablet:text-[18px] air:text-[20px] desktop:text-[22px]">
+          {text}
+        </p>
       </div>
     </div>
   );
@@ -33,30 +35,33 @@ const Advantage: FC<AdvantageProps> = ({ text, className }) => {
 
 export const Advantages: FC = () => {
   return (
-    <section className="container pt-27.5 sm:pt-25 lg:pt-40">
-      <h2 className="font-gotham-pro leading-subpup text-center text-[30px] tracking-tight sm:text-[50px] lg:text-[72px]">
+    <section className="tablet:pt-25 desktop:pt-40 air:pt-29.75 container pt-22.5">
+      <h2 className="font-gotham-pro leading-subpup tablet:text-[50px] desktop:text-[72px] air:text-[60px] text-center text-[30px] tracking-tight">
         Просто и быстро
       </h2>
 
-      <p className="leading-pup pt-3 text-center sm:hidden">
+      <p className="leading-pup tablet:hidden pt-3 text-center">
         CDNvideoHub позволяет подключить готовый видеоплеер с рекламной монетизацией и получать доход с каждого запуска
         видео
       </p>
 
-      <p className="leading-pup hidden pt-7.5 text-center text-xl whitespace-pre-wrap sm:block lg:hidden">
+      <p className="leading-pup tablet:block air:hidden hidden pt-7.5 text-center text-[20px] whitespace-pre-wrap">
         {
           'CDNvideoHub позволяет подключить готовый\nвидеоплеер с рекламной монетизацией и получать\nдоход с каждого запуска видео'
         }
       </p>
 
-      <p className="leading-pup hidden pt-7.5 text-center text-[28px] whitespace-pre-wrap lg:block">
+      <p className="leading-pup air:block desktop:text-[28px] hidden pt-7.5 text-center text-[24px] whitespace-pre-wrap">
         {
           'CDNvideoHub позволяет подключить готовый видеоплеер\nс рекламной монетизацией и получать доход с каждого запуска видео'
         }
       </p>
 
-      <div className="grid grid-cols-2 gap-x-3 gap-y-2.5 pt-7.5 sm:grid-cols-3 sm:pt-12.5 lg:grid-cols-4 lg:pt-12.5">
-        <Advantage className="row-span-2 sm:row-span-1 lg:col-span-2" text="Без разработки собственного ad-stack" />
+      <div className="tablet:grid-cols-3 tablet:pt-12.5 air:pt-11.5 air:grid-cols-4 desktop:pt-12.5 grid grid-cols-2 gap-x-3 gap-y-2.5 pt-7.5">
+        <Advantage
+          className="tablet:row-span-1 air:col-span-2 row-span-2"
+          text="Без разработки собственного ad-stack"
+        />
         <Advantage text="Без поиска рекламодателей" />
         <Advantage text="Без операционных рисков" />
       </div>

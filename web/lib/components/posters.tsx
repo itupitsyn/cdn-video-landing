@@ -40,7 +40,7 @@ export const Posters: FC = () => {
                 width={286}
                 className={cn(
                   'h-32.75 w-22.25 transition-[scale,opacity] duration-300 select-none',
-                  'sm:h-57 sm:w-38.5 lg:h-75 lg:w-51',
+                  'tablet:h-57 tablet:w-38.5 desktop:h-75 desktop:w-51',
                   isActive && 'scale-120',
                   !isPrev && !isNext && !isActive && 'opacity-60',
                 )}
@@ -61,7 +61,7 @@ export const Posters: FC = () => {
                 width={286}
                 className={cn(
                   'h-32.75 w-22.25 transition-[scale,opacity] duration-300 select-none',
-                  'sm:h-57 sm:w-38.5 lg:h-75 lg:w-51',
+                  'tablet:h-57 tablet:w-38.5 desktop:h-75 desktop:w-51',
                   isActive && 'scale-120',
                   !isPrev && !isNext && !isActive && 'opacity-60',
                 )}
@@ -82,7 +82,7 @@ export const Posters: FC = () => {
                 width={286}
                 className={cn(
                   'h-32.75 w-22.25 transition-[scale,opacity] duration-300 select-none',
-                  'sm:h-57 sm:w-38.5 lg:h-75 lg:w-51',
+                  'tablet:h-57 tablet:w-38.5 desktop:h-75 desktop:w-51',
                   isActive && 'scale-120',
                   !isPrev && !isNext && !isActive && 'opacity-60',
                 )}

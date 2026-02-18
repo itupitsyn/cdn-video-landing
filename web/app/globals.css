@@ -16,9 +16,14 @@
   --leading-pup: 1.2;
   --leading-extrasubpup: 1.3;
   --leading-extrapup: 1.5;
+
+  --breakpoint-tablet: 40rem;
+  --breakpoint-air: 64rem;
+  --breakpoint-desktop: 82rem;
+  --breakpoint-huge: 90rem;
+
   --breakpoint-b27: 25rem;
   --breakpoint-b50: 50rem;
-  --breakpoint-2xl: 90rem;
 }
 
 body {
@@ -27,7 +32,7 @@ body {
 }
 
 .container {
-  @apply mx-auto max-w-360 px-3 lg:px-5;
+  @apply mx-auto max-w-360 px-3 desktop:px-5;
 }
 
 input:-webkit-autofill,
@@ -44,6 +49,16 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
   color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .my-swiper-container {

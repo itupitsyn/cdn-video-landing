@@ -11,7 +11,7 @@ export const SendRequestLink: FC = () => {
     <LinkButton
       href={`/#${REQUEST_FORM_ID}`}
       color="blue"
-      className="w-full max-w-99.75 text-center lg:max-w-172.5"
+      className="desktop:max-w-172.5 tablet:max-w-152.5 w-full max-w-99.75 text-center"
       variant="outline"
       onClick={(e) => {
         safeScroll(REQUEST_FORM_ID, e);

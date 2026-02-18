@@ -14,8 +14,11 @@ export const LinkButton: FC<LinkButtonProps> = ({ className, href, variant, colo
       href={href || ''}
       {...props}
       className={cn(
-        'leading-extrapup py-5 font-medium transition-colors hover:cursor-pointer sm:py-3.75 sm:text-[18px] lg:py-5.75 lg:text-2xl',
+        'leading-extrapup py-5.25 font-medium transition-colors hover:cursor-pointer',
         'rounded-[30px] border border-solid',
+        'tablet:py-3.75 tablet:text-[18px]',
+        'air:text-[20px] air:py-5.25',
+        'desktop:py-5.75 desktop:text-[24px]',
         variant === 'outline'
           ? {
               'border-[#F50004] hover:bg-[#F50004]': color === 'red',

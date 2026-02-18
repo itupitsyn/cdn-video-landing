@@ -4,40 +4,40 @@ import { cn } from '../utils/cn';
 
 export const Footer: FC = () => {
   return (
-    <footer className="container py-9 sm:pt-17.25 sm:pb-8.75 lg:pt-11.25 lg:pb-18">
+    <footer className="tablet:pt-17.25 tablet:pb-8.75 desktop:pt-11.25 desktop:pb-18 container py-9">
       <div
         className={cn(
           'leading-pup! font-gotham-pro text-4xl font-bold tracking-[-0.065em]',
-          'b50:text-[112px] b27:text-[57px] sm:text-7xl',
+          'b50:text-[112px] b27:text-[57px] tablet:text-7xl',
         )}
       >
         CDNvideoHub
       </div>
 
-      <div className="flex flex-col gap-7.5 pt-6.25 sm:gap-20 lg:max-w-303.5 lg:flex-row-reverse lg:justify-between lg:gap-8 lg:pt-14.25">
-        <div className="flex flex-wrap gap-5.25 lg:flex-col">
+      <div className="tablet:gap-20 desktop:max-w-303.5 desktop:flex-row-reverse desktop:justify-between desktop:gap-8 desktop:pt-14.25 flex flex-col gap-7.5 pt-6.25">
+        <div className="desktop:flex-col flex flex-wrap gap-5.25">
           <a
             href="https://t.me/CVHsupportBot"
-            className="leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors hover:text-white/80"
+            className="leading-extrasubpup b27:text-[22px] text-xl underline decoration-1 underline-offset-6 transition-colors hover:text-white/80"
           >
             @CVHsupportBot
           </a>
           <a
             href="mailto:partner@cdnvideohub.com"
-            className="leading-extrasubpup b27:text-[22px] text-xl underline underline-offset-4 transition-colors hover:text-white/80"
+            className="leading-extrasubpup b27:text-[22px] text-xl underline decoration-1 underline-offset-6 transition-colors hover:text-white/80"
           >
             partner@cdnvideohub.com
           </a>
         </div>
 
-        <div className="leading-subpup sm:leading-extrasubpup flex flex-col gap-6 text-[18px] tracking-tighter text-white/50 sm:gap-6 sm:text-[22px] sm:text-white lg:text-white/50">
+        <div className="leading-subpup tablet:leading-extrasubpup tablet:gap-6 tablet:text-[22px] tablet:text-white desktop:text-white/50 flex flex-col gap-6 text-[18px] tracking-tighter text-white/50">
           <div>Политика конфиденциальности</div>
           <div>Согласие на обработку персональных данных</div>
           <div>Пользовательское соглашение</div>
         </div>
       </div>
 
-      <div className="font-gotham-pro leading-extrasubpup pt-7.5 tracking-tighter text-[#8C8C8C] sm:pt-12.75 sm:text-2xl">
+      <div className="font-gotham-pro leading-extrasubpup tablet:pt-12.75 tablet:text-2xl pt-7.5 tracking-tighter text-[#8C8C8C]">
         © CDNvideoHub — монетизация видеоконтента
       </div>
     </footer>
