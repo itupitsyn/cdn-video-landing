@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { BG1, BG2, BG2SM, BG3, BG3SM, BG4, BG4SM } from '../assets';
+import { BG1, BG2, BG2SM, BG3, BG3SM, BG4, BG4Air } from '../assets';
 import BG1Huge from '../assets/images/bg1-huge.webp';
 import BG2Huge from '../assets/images/bg2-huge.webp';
 import BG3Huge from '../assets/images/bg3-huge.webp';
@@ -56,6 +56,7 @@ export const Background: FC = () => {
           width={3185}
           height={2716}
         />
+
         <BG3 className="tablet:hidden absolute top-404.75 -left-157.25 size-373.5" />
         <BG3SM
           className={cn(
@@ -71,11 +72,18 @@ export const Background: FC = () => {
           width={4654}
           height={4654}
         />
-        <BG4 className="tablet:hidden absolute top-1255.5 -left-18.5 h-313.5 w-333" />
-        <BG4SM
+
+        <BG4
           className={cn(
-            'tablet:block absolute top-1195 left-34.5 hidden h-314.5 w-348.25',
-            'desktop:top-1202.25 desktop:left-97 desktop:h-364.75 desktop:w-397.5',
+            'absolute -right-212.5 -bottom-100 h-314.5 w-348.25',
+            'tablet:-bottom-112.5 tablet:-right-174',
+            'air:hidden',
+          )}
+        />
+        <BG4Air
+          className={cn(
+            'absolute hidden',
+            'air:block air:-bottom-125 air:-right-134 air:w-397.5 air:h-364.75',
             'huge:hidden',
           )}
         />

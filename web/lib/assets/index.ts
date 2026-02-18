@@ -10,5 +10,5 @@ export { default as BG2SM } from './images/bg2-sm.svg';
 export { BG3 } from './images/bg3';
 export { BG3SM } from './images/bg3-sm';
 export { default as BG4 } from './images/bg4.svg';
-export { default as BG4SM } from './images/bg4-sm.svg';
+export { default as BG4Air } from './images/bg4-air.svg';
 export { default as Timer } from './images/timer.svg';
