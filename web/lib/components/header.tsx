@@ -13,7 +13,8 @@ export const Header: FC = () => {
             'font-gotham-pro leading-pup pt-27.5 text-[50px] font-bold tracking-tighter',
             'tablet:pt-15 tablet:text-[75px]',
             'air:text-[97px] air:pt-22',
-            'desktop:pt-37.5 desktop:text-[117px]',
+            'desktop:pt-20 desktop:text-[117px]',
+            'huge:pt-37.5',
             'bg-[linear-gradient(90deg,rgba(210,0,0,0.4)_0%,rgba(62,0,0,0.4)_34.5%,rgba(0,29,146,0.4)_100%),linear-gradient(0deg,#F50004,#F50004)]',
             'bg-clip-text text-transparent',
           )}

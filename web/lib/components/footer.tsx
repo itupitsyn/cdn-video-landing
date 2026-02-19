@@ -14,7 +14,7 @@ export const Footer: FC = () => {
         CDNvideoHub
       </div>
 
-      <div className="tablet:gap-20 air:max-w-303.5 air:flex-row-reverse air:justify-between air:gap-8 air:pt-14.25 flex flex-col gap-7.5 pt-6.5">
+      <div className="tablet:gap-20 air:max-w-303.5 air:flex-row air:justify-between air:gap-8 air:pt-14.25 flex flex-col gap-7.5 pt-6.5">
         <div className="air:flex-col flex flex-wrap gap-5.25">
           <a
             href="https://t.me/CVHsupportBot"
@@ -30,11 +30,11 @@ export const Footer: FC = () => {
           </a>
         </div>
 
-        <div className="leading-subpup tablet:leading-extrasubpup tablet:gap-6 tablet:text-[22px] tablet:text-white air:text-white/50 flex flex-col gap-6 text-[18px] tracking-tighter text-white/50">
+        {/* <div className="leading-subpup tablet:leading-extrasubpup tablet:gap-6 tablet:text-[22px] tablet:text-white air:text-white/50 flex flex-col gap-6 text-[18px] tracking-tighter text-white/50">
           <div>Политика конфиденциальности</div>
           <div>Согласие на обработку персональных данных</div>
           <div>Пользовательское соглашение</div>
-        </div>
+        </div> */}
       </div>
 
       <div className="font-gotham-pro leading-extrasubpup tablet:pt-12.75 tablet:text-2xl pt-7.5 tracking-tighter text-[#8C8C8C]">
