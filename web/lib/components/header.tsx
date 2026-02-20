@@ -10,7 +10,7 @@ export const Header: FC = () => {
       <div className="container flex flex-col items-center">
         <h1
           className={cn(
-            'font-gotham-pro leading-pup pt-27.5 text-[50px] font-bold tracking-tighter',
+            'font-gotham-pro leading-pup pt-27.5 pr-2 text-[50px] font-bold tracking-tighter',
             'tablet:pt-15 tablet:text-[75px]',
             'air:text-[97px] air:pt-22',
             'desktop:pt-20 desktop:text-[117px]',
