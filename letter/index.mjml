@@ -1,0 +1,336 @@
+<mjml>
+  <mj-head>
+    <mj-style>
+      .card-table table {
+        border-collapse: separate !important;
+        border-spacing: 0 !important;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .mobile-stack {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
+        }
+
+        .mobile-pad {
+          padding-bottom: 20px !important;
+        }
+
+        .title-text div {
+          font-size: 20px !important;
+          line-height: 120% !important;
+        }
+        
+        /* Подзаголовки и обычный текст */
+        .subtitle-text div {
+          font-size: 18px !important;
+        }
+
+        /* Текст внутри красных карточек (это нативные теги p) */
+        .red-card-text {
+          font-size: 14px !important;
+        }
+
+        /* Огромные цифры в синих карточках (нативные теги p) */
+        .blue-card-number {
+          font-size: 40px !important;
+        }
+
+        /* Текст в синих карточках (нативные теги p) */
+        .blue-card-text {
+          font-size: 18px !important;
+        }
+        
+        /* Текст в списке с галочками */
+        .list-text div {
+          font-size: 18px !important;
+        }
+
+      }
+    </mj-style>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" color="#ffffff" />
+      <mj-button background-color="transparent" border="1px solid #ff0000" border-radius="30px" font-weight="bold" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#070000">
+    <mj-wrapper background-url="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.png" background-repeat="no-repeat" full-width="full-width">
+
+      <mj-section padding-top="40px">
+        <mj-column>
+          <mj-image src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/logo.png" alt="CDNVideoHub" />
+          <mj-text align="center" font-size="24px" line-height="130%" padding-top="4px">
+            Установите плеер CDNVideoHub —<br />зарабатывайте на каждом показе рекламы
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-image padding-top="57px" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/player.png" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="22px">
+        <mj-column>
+          <mj-text align="center" font-size="22px" line-height="120%">
+            Подключите наш видеоплеер и начните получать стабильный доход с рекламы. Простое подключение, ежемесячные выплаты и персональная поддержка.
+          </mj-text>
+          <mj-button href="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru" width="100%" font-size="24px" padding-top="36px" height="60px">
+            Стать партнером
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" line-height="120%" font-size="28px" font-weight="medium" padding-top="56px" padding-bottom="20px">
+            Преимущества сотрудничества
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px 13px">
+        <mj-column>
+          <mj-table padding="0" css-class="card-table">
+            <tr>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px 8px 18px 12px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Юридическая помощь в восстановлении площадок</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Выплаты каждый месяц</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">База контента более 60 000 тайтлов</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px 13px">
+        <mj-column>
+          <mj-table padding="0" css-class="card-table">
+            <tr>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px 8px 18px 12px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Белый фиксированный CPM — 40 ₽</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Выделенный менеджер поддержки</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="padding: 7px; width: 33%;" padding="7px">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;">
+                        <p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Быстрый выход новинок</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-section padding-top="36px">
+        <mj-column>
+          <mj-text align="center" line-height="120%" font-size="28px" font-weight="medium" padding-bottom="20px">
+            Как начать зарабатывать
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-url="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.png" background-repeat="no-repeat" background-size="cover" border-radius="10px" padding="16px 2px">
+        <mj-column width="100%">
+          <mj-table padding="0 22px" css-class="card-table">
+            <tr>
+              <td class="mobile-stack mobile-pad" style="width: 50%; padding-right: 8px; padding-bottom: 8px;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;">
+                      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                        <tr>
+                          <td style="vertical-align: top;">
+                            <p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">1</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: bottom;">
+                            <p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Оставьте заявку на сайте</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+
+              <td class="mobile-stack" style="width: 50%; padding-left: 8px; padding-bottom: 8px;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;">
+                      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                        <tr>
+                          <td style="vertical-align: top;">
+                            <p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">2</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: bottom;">
+                            <p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Менеджер свяжется с вами</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="mobile-stack mobile-pad" style="width: 50%; padding-right: 8px; padding-top: 8px;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;">
+                      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                        <tr>
+                          <td style="vertical-align: top;">
+                            <p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">3</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: bottom;">
+                            <p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Подключите ваш первый сайт в личном кабинете</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="mobile-stack" style="width: 50%; padding-left: 8px; padding-top: 8px;">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                  <tr>
+                    <td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;">
+                      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;">
+                        <tr>
+                          <td style="vertical-align: top;">
+                            <p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">4</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: bottom;">
+                            <p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Начните зарабатывать</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="56px">
+        <mj-column>
+          <mj-text align="center" line-height="120%" font-size="28px" font-weight="medium">Условия подключения</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-group width="100%">
+          <mj-column width="10%" />
+          <mj-column width="10%">
+            <mj-image src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" width="25px" alt="cb" padding="0" />
+          </mj-column>
+          <mj-column width="70%">
+            <mj-text font-size="22px" line-height="120%" padding="0">Трафик от 2000 уникальных посетителей в сутки</mj-text>
+          </mj-column>
+          <mj-column width="10%" />
+        </mj-group>
+
+        <mj-column width="100%">
+          <mj-spacer height="16px" />
+        </mj-column>
+
+        <mj-group width="100%">
+          <mj-column width="10%" />
+          <mj-column width="10%">
+            <mj-image src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" width="25px" alt="cb" padding="0" />
+          </mj-column>
+          <mj-column width="70%">
+            <mj-text font-size="22px" line-height="120%" padding="0">Доступ в Метрику</mj-text>
+          </mj-column>
+          <mj-column width="10%" />
+        </mj-group>
+
+        <mj-column width="100%">
+          <mj-spacer height="16px" />
+        </mj-column>
+
+        <mj-group width="100%">
+          <mj-column width="10%" />
+          <mj-column width="10%">
+            <mj-image src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" width="25px" alt="cb" padding="0" />
+          </mj-column>
+          <mj-column width="70%">
+            <mj-text font-size="22px" line-height="120%" padding="0">Наш плеер должен быть<br />установлен на первом месте</mj-text>
+          </mj-column>
+          <mj-column width="10%" />
+        </mj-group>
+      </mj-section>
+
+      <mj-section padding-top="56px">
+        <mj-column>
+          <mj-text align="center" line-height="120%" font-size="22px" font-weight="medium">Отправьте заявку — персональный менеджер свяжется с вами в течение пары минут</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-top="56px">
+        <mj-column>
+          <mj-text align="center" line-height="120%" font-size="22px" font-weight="medium">
+            <a href="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru" style="color: gray">© CDNvideoHub</a>
+            <span style="color: gray;"> — монетизация видеоконтента</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

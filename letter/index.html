@@ -1,532 +1,75 @@
-<!DOCTYPE html>
-<html>
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><title></title><!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">#outlook a { padding:0; }
+          .ReadMsgBody { width:100%; }
+          .ExternalClass { width:100%; }
+          .ExternalClass * { line-height:100%; }
+          body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+          table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+          img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+          p { display:block;margin:13px 0; }</style><!--[if !mso]><!--><style type="text/css">@media only screen and (max-width:480px) {
+            @-ms-viewport { width:320px; }
+            @viewport { width:320px; }
+          }</style><!--<![endif]--><!--[if mso]>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]--><!--[if lte mso 11]>
+        <style type="text/css">
+          .outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]--><style type="text/css">@media only screen and (min-width:480px) {
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+.mj-column-per-10 { width:10% !important; max-width: 10%; }
+.mj-column-per-70 { width:70% !important; max-width: 70%; }
+      }</style><style type="text/css">@media only screen and (max-width:480px) {
+      table.full-width-mobile { width: 100% !important; }
+      td.full-width-mobile { width: auto !important; }
+    }</style><style type="text/css">.card-table table {
+        border-collapse: separate !important;
+        border-spacing: 0 !important;
+      }
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #FFF;
-      background-color: #070000;
-      background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.webp);
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0 !important;
-      box-sizing: border-box;
-    }
-
-    div,
-    img,
-    td,
-    p,
-    button,
-    h2,
-    a,
-    table {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    a:hover {
-      color: white;
-    }
-
-    a:visited {
-      color: white;
-    }
-
-    .content {
-      width: 100%;
-      padding-bottom: 55px;
-    }
-
-    .logo {
-      max-width: 429px;
-      margin-top: 56px;
-    }
-
-    .player {
-      height: 310px;
-      margin-top: 52px;
-    }
-
-    .header {
-      text-align: center;
-    }
-
-    .header-text {
-      font-size: 24px !important;
-      line-height: 1.3 !important;
-      margin: 4px 5px 0px;
-      text-align: center;
-    }
-
-    .text-1 {
-      line-height: 1.3;
-      font-size: 22px;
-      text-align: center;
-      max-width: 501px;
-      margin: 26px 5px 0;
-    }
-
-    .become-partner {
-      max-width: 557px;
-      margin: 36px 22px 0 22px;
-      border: solid 1px #F50004;
-      border-radius: 30px;
-      display: block;
-      font-size: 24px;
-      line-height: 1.5;
-      font-weight: 500;
-      padding: 24px;
-    }
-
-    .become-partner:hover {
-      background-color: #F50004;
-    }
-
-    .subheader {
-      font-size: 28px;
-      line-height: 1.2;
-      font-weight: 500;
-      margin: 56px 5px 36px;
-      text-align: center;
-    }
-
-    .advantages {
-      max-width: 558px;
-      margin: 0 5px;
-
-      td {
-        width: 33%;
-
-        table {
-          font-size: 18px;
-          /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/border-red.webp); */
-          /* background-size: contain;
-          background-repeat: no-repeat; */
-          border: 1px solid red;
-          border-radius: 30px;
-          min-height: 200px;
-          height: 200px;
-          vertical-align: bottom;
-          background-color: transparent;
-          padding: 18px;
+      @media only screen and (max-width: 480px) {
+        .mobile-stack {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
         }
-      }
-    }
 
-    .how-to-earn-container {
-      background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.webp);
-      background-position: center;
-      background-repeat: no-repeat;
-      padding-top: 35px;
-      padding-bottom: 40px;
-    }
-
-    .how-to-earn {
-      max-width: 558px;
-      margin: 0 5px;
-      background-repeat: no-repeat;
-
-      .cell-container {
-        width: 50%;
-
-        .cell {
-          font-size: 22px;
-          /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/border-blue.webp);
-          background-size: contain; */
-          border: 1px solid blue;
-          border-radius: 30px;
-          background-repeat: no-repeat;
-          min-height: 221px;
-          height: 221px;
-          vertical-align: bottom;
-          background-color: transparent;
-          padding: 18px;
+        .mobile-pad {
+          padding-bottom: 20px !important;
         }
-      }
-    }
 
-    .conditions {
-      margin-left: 5px;
-      margin-right: 5px;
-      max-width: 476px;
-
-      .text-cell {
-        padding: 8px 0 8px 20px;
-      }
-
-      .icon-cell {
-        padding-top: 8px;
-      }
-    }
-
-    .text-2 {
-      margin: 62px 44px 0;
-      text-align: center;
-      font-size: 22px;
-      line-height: 1.2;
-    }
-
-    .text-3 {
-      margin: 36px 5px 0;
-      text-align: center;
-      color: #FFFFFF80;
-      font-size: 22px;
-      line-height: 1.2;
-
-      .link {
-        color: #FFFFFF80;
-        text-decoration: underline;
-      }
-
-      .link:hover {
-        color: white;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .content {
-        width: 100% !important;
-        padding-bottom: 36px;
-      }
-
-      .logo {
-        max-width: 328px;
-        margin-top: 36px;
-      }
-
-      .header-text {
-        font-size: 18px !important;
-        margin: 25px 5px 0px;
-      }
-
-      .player {
-        height: 195px;
-        margin-top: 37px;
-      }
-
-      .text-1 {
-        line-height: 1.3;
-        font-size: 18px;
-        max-width: 351px;
-        margin: 32px 5px 0;
-      }
-
-      .become-partner {
-        max-width: 353px;
-        margin: 32px 16px 0 16px;
-        font-size: 18px;
-        padding: 14px;
-      }
-
-      .subheader {
-        font-size: 22px;
-        margin-top: 60px 5px 32px;
-      }
-
-      /* .advantages {
-        display: none !important;
-        mso-hide: all !important;
-      } */
-
-      .how-to-earn {
-        .cell-container {
-          .cell {
-            font-size: 18px;
-            /* background-image: url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/xs/border-blue.webp); */
-            word-wrap: break-word;
-            word-break: break-word;
-            overflow: hidden;
-            min-height: 252px;
-            height: 252px;
-          }
+        .title-text div {
+          font-size: 20px !important;
+          line-height: 120% !important;
         }
-      }
-    }
+        
+        /* Подзаголовки и обычный текст */
+        .subtitle-text div {
+          font-size: 18px !important;
+        }
 
-    @media screen and (max-width: 340px) {
-      .logo {
-        max-width: 250px;
-      }
-    }
-  </style>
-</head>
+        /* Текст внутри красных карточек (это нативные теги p) */
+        .red-card-text {
+          font-size: 14px !important;
+        }
 
-<body>
-  <div class="content">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center">
-          <table border="0" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 600px;">
-            <tr>
-              <td style="text-align: center; overflow: hidden;">
-                <img src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/logo.webp" class="logo"></img>
-                <p class="header-text">Установите плеер CDNvideoHub — зарабатывайте на каждом показе рекламы</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+        /* Огромные цифры в синих карточках (нативные теги p) */
+        .blue-card-number {
+          font-size: 40px !important;
+        }
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="player">
-      <tr>
-        <td background="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/player.webp" valign="middle"
-          style="background-size: cover; background-position: center;">
-        </td>
-      </tr>
-    </table>
+        /* Текст в синих карточках (нативные теги p) */
+        .blue-card-text {
+          font-size: 18px !important;
+        }
+        
+        /* Текст в списке с галочками */
+        .list-text div {
+          font-size: 18px !important;
+        }
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center">
-          <table width="600" border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="text-1">
-            <tr>
-              <td style="text-align: center; overflow: hidden;">
-                Подключите наш видеоплеер и начните получать стабильный доход с рекламы.
-                Простое подключение, ежемесячные выплаты и персональная поддержка.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center; overflow: hidden;">
-                <a href="https://change-me.ru" class="become-partner">Стать партнером</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <h2 class="subheader">Преимущества сотрудничества</h2>
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
-      <tr>
-        <td align="center">
-
-          <table width="600" border="0" cellspacing="0" cellpadding="0" class="advantages">
-            <tr>
-              <td style="padding-right: 7px; padding-bottom: 22px;">
-                <table style="padding-left: 12px; padding-right: 8px;">
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      Юридическая помощь в восстановлении площадок
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-right: 8px; padding-left: 8px; padding-bottom: 22px;">
-                <table>
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      Выплаты каждый месяц
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-left: 8px; padding-bottom: 22px;">
-                <table>
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      База контента более 60 000 тайтлов
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-right: 7px;">
-                <table>
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      Белый фиксированный CPM — 40 ₽
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-right: 8px; padding-left: 8px;">
-                <table>
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      Выделенный менеджер поддержки
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-left: 8px;">
-                <table>
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      Быстрый выход новинок
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-          </table>
-
-        </td>
-      </tr>
-    </table>
-
-    <h2 class="subheader">Как начать зарабатывать</h2>
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="how-to-earn-container">
-      <tr>
-        <td align="center">
-          <table border="0" cellspacing="0" cellpadding="0" class="how-to-earn">
-            <tr>
-              <td style="padding-right: 8px; padding-bottom: 16px;" class="cell-container">
-                <table class="cell">
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      <table height="100%">
-                        <tr>
-                          <td valign="top" style="font-size: 58px; line-height: 1.2;">1</td>
-                        </tr>
-
-                        <tr>
-                          <td valign="bottom">
-                            Оставьте заявку на сайте
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-left: 8px; padding-bottom: 16px;" class="cell-container">
-                <table class="cell">
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      <table height="100%">
-                        <tr>
-                          <td valign="top" style="font-size: 58px; line-height: 1.2;">2</td>
-                        </tr>
-
-                        <tr>
-                          <td valign="bottom">
-                            Менеджер свяжется с вами и проконсультирует по всем вопросам
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-right: 8px;" class="cell-container">
-                <table class="cell">
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      <table height="100%">
-                        <tr>
-                          <td valign="top" style="font-size: 58px; line-height: 1.2;">3</td>
-                        </tr>
-
-                        <tr>
-                          <td valign="bottom">
-                            Подключите ваш первый сайт в личном кабинете
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td style="padding-left: 8px;" class="cell-container">
-                <table class="cell">
-                  <tr>
-                    <td style="vertical-align: bottom;">
-                      <table height="100%">
-                        <tr>
-                          <td valign="top" style="font-size: 58px; line-height: 1.2;">4</td>
-                        </tr>
-
-                        <tr>
-                          <td valign="bottom">
-                            Начните зарабатывать
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-          </table>
-
-        </td>
-      </tr>
-    </table>
-
-    <h2 class="subheader">Условия подключения</h2>
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 22px; line-height: 1.2;"
-            class="conditions">
-            <tr>
-              <td valign="top" class="icon-cell">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
-                </svg>
-              </td>
-              <td class="text-cell">
-                Трафик от 2000 уникальных посетителей в сутки
-              </td>
-            </tr>
-            <tr>
-              <td valign="top" class="icon-cell">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
-                </svg>
-              </td>
-              <td class="text-cell">
-                Доступ в Метрику
-              </td>
-            </tr>
-            <tr>
-              <td valign="top" class="icon-cell">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20 12.5L13.5454 18.3678C13.307 18.5845 12.943 18.5845 12.7046 18.3678L10 15.9091M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z"
-                    stroke="white" stroke-width="1.25" stroke-linecap="round" />
-                </svg>
-              </td>
-              <td class="text-cell">
-                Наш плеер должен быть установлен на первом месте
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <div class="text-2">Отправьте заявку — персональный менеджер свяжется с вами в течение пары минут</div>
-
-    <div class="text-3"><a class="link" href="https://change-me.ru">© CDNvideoHub</a> — монетизация видеоконтента</div>
-  </div>
-</body>
-
-</html>
+      }</style></head><body style="background-color:#070000;"><div style="background-color:#070000;"><table align="center" background="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.png) top center / auto no-repeat;width:100%;"><tbody><tr><td><!--[if mso | IE]><v:rect style="mso-width-percent:1000;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0.5, 0" position="0.5, 0" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg.png" type="tile" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><div style="line-height:0;font-size:0;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:40px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:550px;"><img alt="CDNVideoHub" height="auto" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="550"></td></tr></tbody></table></td></tr><tr><td align="center" style="font-size:0px;padding:10px 25px;padding-top:4px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:24px;line-height:130%;text-align:center;color:#ffffff;">Установите плеер CDNVideoHub —<br>зарабатывайте на каждом показе рекламы</div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;padding-top:57px;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:550px;"><img height="auto" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/player.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="550"></td></tr></tbody></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:22px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;line-height:120%;text-align:center;color:#ffffff;">Подключите наш видеоплеер и начните получать стабильный доход с рекламы. Простое подключение, ежемесячные выплаты и персональная поддержка.</div></td></tr><tr><td align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;padding-top:36px;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;width:100%;line-height:100%;"><tr><td align="center" bgcolor="transparent" role="presentation" style="border:1px solid #ff0000;border-radius:30px;cursor:auto;height:60px;padding:10px 25px;background:transparent;" valign="middle"><a href="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru" style="background:transparent;color:#ffffff;font-family:Arial, sans-serif;font-size:24px;font-weight:bold;line-height:120%;Margin:0;text-decoration:none;text-transform:none;" target="_blank">Стать партнером</a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;padding-top:56px;padding-bottom:20px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:28px;font-weight:medium;line-height:120%;text-align:center;color:#ffffff;">Преимущества сотрудничества</div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0px 13px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:574px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" class="card-table" style="font-size:0px;padding:0;word-break:break-word;"><table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;"><tr><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px 8px 18px 12px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Юридическая помощь в восстановлении площадок</p></td></tr></table></td><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Выплаты каждый месяц</p></td></tr></table></td><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">База контента более 60 000 тайтлов</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0px 13px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:574px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" class="card-table" style="font-size:0px;padding:0;word-break:break-word;"><table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;"><tr><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px 8px 18px 12px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Белый фиксированный CPM — 40 ₽</p></td></tr></table></td><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Выделенный менеджер поддержки</p></td></tr></table></td><td style="padding: 7px; width: 33%;" padding="7px"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid red; border-radius: 30px; padding: 18px; height: 164px; vertical-align: bottom;"><p class="red-card-text" style="margin: 0; font-size: 18px; color: #ffffff; font-family: Arial, sans-serif;">Быстрый выход новинок</p></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:36px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;padding-bottom:20px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:28px;font-weight:medium;line-height:120%;text-align:center;color:#ffffff;">Как начать зарабатывать</div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><v:rect style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0.5, 0" position="0.5, 0" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.png" type="tile" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><![endif]--><div style="background:url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.png) top center / cover no-repeat;Margin:0px auto;border-radius:10px;max-width:600px;"><div style="line-height:0;font-size:0;"><table align="center" background="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:url(https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/bg-blue.png) top center / cover no-repeat;width:100%;border-radius:10px;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:16px 2px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:596px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" class="card-table" style="font-size:0px;padding:0 22px;word-break:break-word;"><table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;"><tr><td class="mobile-stack mobile-pad" style="width: 50%; padding-right: 8px; padding-bottom: 8px;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="vertical-align: top;"><p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">1</p></td></tr><tr><td style="vertical-align: bottom;"><p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Оставьте заявку на сайте</p></td></tr></table></td></tr></table></td><td class="mobile-stack" style="width: 50%; padding-left: 8px; padding-bottom: 8px;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="vertical-align: top;"><p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">2</p></td></tr><tr><td style="vertical-align: bottom;"><p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Менеджер свяжется с вами</p></td></tr></table></td></tr></table></td></tr><tr><td class="mobile-stack mobile-pad" style="width: 50%; padding-right: 8px; padding-top: 8px;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="vertical-align: top;"><p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">3</p></td></tr><tr><td style="vertical-align: bottom;"><p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Подключите ваш первый сайт в личном кабинете</p></td></tr></table></td></tr></table></td><td class="mobile-stack" style="width: 50%; padding-left: 8px; padding-top: 8px;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="border: 1px solid #0033ff; border-radius: 30px; padding: 16px; height: 200px; vertical-align: top;"><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: separate !important; border-spacing: 0 !important; height: 100%;"><tr><td style="vertical-align: top;"><p class="blue-card-number" style="font-size: 58px; line-height: 110%; font-weight: bold; margin: 0; color: #ffffff;">4</p></td></tr><tr><td style="vertical-align: bottom;"><p class="blue-card-text" style="margin: 0; font-size: 22px; line-height: 120%; color: #ffffff;">Начните зарабатывать</p></td></tr></table></td></tr></table></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]></v:textbox></v:rect></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:56px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:28px;font-weight:medium;line-height:120%;text-align:center;color:#ffffff;">Условия подключения</div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:0;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:25px;"><img alt="cb" height="auto" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="25"></td></tr></tbody></table></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:420px;" ><![endif]--><div class="mj-column-per-70 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:70%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" style="font-size:0px;padding:0;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;line-height:120%;text-align:left;color:#ffffff;">Трафик от 2000 уникальных посетителей в сутки</div></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td></tr></table><![endif]--></div><!--[if mso | IE]></td><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td style="font-size:0px;word-break:break-word;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="16" style="vertical-align:top;height:16px;"><![endif]--><div style="height:16px;">&nbsp;</div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></table></div><!--[if mso | IE]></td><td class="" style="width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:0;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:25px;"><img alt="cb" height="auto" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="25"></td></tr></tbody></table></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:420px;" ><![endif]--><div class="mj-column-per-70 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:70%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" style="font-size:0px;padding:0;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;line-height:120%;text-align:left;color:#ffffff;">Доступ в Метрику</div></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td></tr></table><![endif]--></div><!--[if mso | IE]></td><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td style="font-size:0px;word-break:break-word;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="16" style="vertical-align:top;height:16px;"><![endif]--><div style="height:16px;">&nbsp;</div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></table></div><!--[if mso | IE]></td><td class="" style="width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:0;word-break:break-word;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:25px;"><img alt="cb" height="auto" src="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru/icon-check.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="25"></td></tr></tbody></table></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:420px;" ><![endif]--><div class="mj-column-per-70 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:70%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="left" style="font-size:0px;padding:0;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;line-height:120%;text-align:left;color:#ffffff;">Наш плеер должен быть<br>установлен на первом месте</div></td></tr></table></div><!--[if mso | IE]></td><td style="vertical-align:top;width:60px;" ><![endif]--><div class="mj-column-per-10 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:10%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"></table></div><!--[if mso | IE]></td></tr></table><![endif]--></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:56px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;font-weight:medium;line-height:120%;text-align:center;color:#ffffff;">Отправьте заявку — персональный менеджер свяжется с вами в течение пары минут</div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style="Margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:56px;text-align:center;vertical-align:top;"><!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]--><div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"><tr><td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"><div style="font-family:Arial, sans-serif;font-size:22px;font-weight:medium;line-height:120%;text-align:center;color:#ffffff;"><a href="https://b9b4fd45-d800-43fd-bae3-8f1f75809588.empty-state.ru" style="color: gray">© CDNvideoHub</a> <span style="color: gray;">— монетизация видеоконтента</span></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table></td></tr></table><![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]></td></tr></table></v:textbox></v:rect><![endif]--></td></tr></tbody></table></div></body></html>
